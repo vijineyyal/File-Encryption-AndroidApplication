@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/round1"
+        android:id="@+id/l1"
+        android:orientation="vertical"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@id/l1"
+        android:background="@drawable/round2"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:id="@+id/t"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#F3F3F3"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:text="Backup to Google Drive..?"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YES"
+            android:textStyle="bold"
+            android:id="@+id/yesbtn"
+            android:background="@drawable/round3"
+            android:layout_marginRight="30dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NO"
+            android:textStyle="bold"
+            android:background="@drawable/round3"
+            android:id="@+id/nobtn"
+            />
+
+    </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
